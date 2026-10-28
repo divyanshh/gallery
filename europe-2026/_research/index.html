@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viral Video Research</title>
+<style>
+:root{--bg:#f5f4ef;--panel:#fff;--panel2:#efeee8;--fg:#1b1b19;--mut:#6c6b64;--line:#e1dfd6;--acc:#FFD400;--ink:#1b1b19;--link:#2563c9;--good:#1f8a4c;--bad:#c23a2b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f0f0e;--panel:#191917;--panel2:#22221f;--fg:#ecebe4;--mut:#9a998f;--line:#2c2b27;--link:#8ab4ff;--good:#5fd08f;--bad:#ff7a6a}}
+:root[data-theme="dark"]{--bg:#0f0f0e;--panel:#191917;--panel2:#22221f;--fg:#ecebe4;--mut:#9a998f;--line:#2c2b27;--link:#8ab4ff;--good:#5fd08f;--bad:#ff7a6a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 80px}a{color:var(--link)}
+h1{font-size:28px;margin:0 0 6px}h2{font-size:20px;margin:36px 0 12px;display:flex;align-items:center;gap:10px}
+h2 .n{background:var(--acc);color:var(--ink);border-radius:99px;font-size:13px;padding:2px 10px;font-weight:800}
+.lead{color:var(--mut);max-width:780px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}nav a{text-decoration:none;color:var(--fg);border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:4px 12px;font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.card b{display:block;font-size:16px;margin-bottom:4px}.card p{margin:0;color:var(--mut);font-size:14px}
+.big{font-size:30px;font-weight:800;color:var(--fg)}
+.tw{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--panel2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}tr:last-child td{border-bottom:0}
+.s{display:inline-block;font-size:11.5px;font-weight:700;border-radius:99px;padding:1px 8px}
+.A{background:#1f8a4c22;color:var(--good)}.B{background:#d9a40022;color:#b88a00}.C{background:#88888822;color:var(--mut)}
+.adopt{background:#1f8a4c22;color:var(--good)}.maybe{background:#d9a40022;color:#b88a00}.avoid{background:#c23a2b22;color:var(--bad)}
+.tmpl{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.tmpl div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.tmpl .os{font-weight:700}.tmpl .cp{color:var(--mut);font-size:13.5px;margin-top:6px}
+.note{background:var(--panel2);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--mut)}
+</style>
+</head>
+<body><main>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px"><a href="../index.html" style="text-decoration:none;font-size:13px;border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:4px 12px;color:var(--fg)">← Reels hub</a><a href="index.html" style="text-decoration:none;font-size:13px;background:var(--acc);color:var(--ink);border-radius:99px;padding:4px 12px;font-weight:700">Video research</a><a href="photos.html" style="text-decoration:none;font-size:13px;border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:4px 12px;color:var(--fg)">Photo research</a></div>
+<h1>What makes short video go viral</h1>
+<p class="lead">Research round 2 (27 Oct 2026): ~20 research papers, 2025–26 platform + creator guidance, and ~80 open-source tools and asset libraries with their licences checked. Applied to our Europe-trip series. Back to the <a href="../index.html">reels hub</a>.</p>
+<nav><a href="#take">Top takeaways</a><a href="#change">What to change</a><a href="#papers">Papers</a><a href="#platform">Platform + creators</a><a href="#tools">Open-source toolkit</a><a href="#traps">Licence traps</a><a href="#prague">Prague hook ideas</a></nav>
+
+<h2 id="take"><span class="n">1</span>Top takeaways</h2>
+<div class="cards">
+<div class="card"><span class="big">5 s</span><b>decides almost everything</b><p>In ~90k Snapchat videos, staying past second 5 correlates 0.93 with total watch share. The joke must land by ~3 s.</p></div>
+<div class="card"><span class="big">⚡↗</span><b>Surprise, then joy in pulses</b><p>Surprise holds attention; joy works by rising. Peak–valley–peak beats one long high (Teixeira et al., JMR).</p></div>
+<div class="card"><span class="big">1</span><b>sting per joke, on the reaction</b><p>Place a sound on recognition/release, after a tiny gap. Bright, harsh audio lowered likes and comments.</p></div>
+<div class="card"><span class="big">🙈</span><b>Don't caption the punchline early</b><p>A caption that shows the punch word before it's said kills the laugh. Split lines so it appears on time.</p></div>
+<div class="card"><span class="big">🔗</span><b>Link every episode</b><p>Linked Reels (Aug 2025) put a "Watch Part" button on each reel; a long static end card invites a swipe.</p></div>
+<div class="card"><span class="big">📨</span><b>Design for sends</b><p>Indians share more than most regions (Mosseri). Name who to send it to; ask real questions, not "comment 🔥".</p></div>
+<div class="card"><span class="big">👥</span><b>Faces, close up, first</b><p>Wide shots opened 1% of viral TikToks vs 17% of non-viral. Scenery after the hook.</p></div>
+<div class="card"><span class="big">⚠️</span><b>Civic-sense risk</b><p>Indian groups performing in public abroad drew pile-ons in 2026. Keep group singing self-deprecating; no bothered locals in shot.</p></div>
+</div>
+
+<h2 id="change"><span class="n">2</span>What this would change in our reels (proposals)</h2>
+<div class="tw"><table>
+<tr><th>Now</th><th>Evidence</th><th>Proposal</th></tr>
+<tr><td>Cold open 2.5–4.5 s + 1.3 s rewind</td><td>Past 5 s ≈ the whole outcome; surprise first</td><td>Keep; punch lands by ~3 s; rewind 0.9 s</td></tr>
+<tr><td>Caption shows the whole line at once</td><td>Punch-word spoiler (comedy editors)</td><td>Split lines so the punch word appears when spoken</td></tr>
+<tr><td>Several sounds per reel, some bright</td><td>≤1 per joke; harsh audio hurts</td><td>One per joke, after a small gap; rounder stings</td></tr>
+<tr><td>3 s pause = frozen frame + ticking</td><td>Dead air risks swipe; tap-to-pause exists</td><td>2 s, keep the group audio running, pin a "guess" comment</td></tr>
+<tr><td>3 s blank end card</td><td>Static ends invite swipes; Linked Reels exist</td><td>~1.5 s card, tease in the last line, link every reel</td></tr>
+<tr><td>Caption on every line</td><td>Text helps reach; subtitles cut comments on Douyin</td><td>Keep; A/B "key lines only" with Trial Reels</td></tr>
+<tr><td>Pill + title big in frame 1</td><td>Branding early reduces sharing</td><td>Pill stays small; the cold-open label is the hook</td></tr>
+<tr><td>CTA in the post caption</td><td>Bait demoted; sends weigh most</td><td>"Send this to…" + a genuine question; pin a comment</td></tr>
+<tr><td>Wide scenic openers</td><td>Wide shots rare in viral</td><td>Open on faces/reactions</td></tr>
+</table></div>
+<p class="note">Nothing here changes the reels yet: these are proposals for you to accept or reject. No study tests cold opens, cliffhangers, trending sounds or Hinglish captions directly, so we'd confirm with your own Insights and Trial Reels.</p>
+
+<h2 id="papers"><span class="n">3</span>Research papers</h2>
+<div class="tw"><table>
+<tr><th>Paper</th><th>Data</th><th>Finding</th><th>Strength</th></tr>
+<tr><td><a href="https://arxiv.org/abs/2410.00289">Li et al., ECCV 2024</a></td><td>~90k Snapchat</td><td>Past 5 s ↔ watch % r = 0.926; watch % falls with length; title text helps; speech adds nothing</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://doi.org/10.1509/jmr.10.0207">Teixeira, Wedel, Pieters, JMR 2012</a></td><td>lab, facial coding</td><td>Surprise holds by level, joy by rise; pulses beat plateaus</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://doi.org/10.1177/0022242919841034">Tellis et al., J. Marketing 2019</a></td><td>2 field studies</td><td>Amusement/excitement/warmth drive shares; early branding reduces them</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://arxiv.org/abs/2206.06003">Zhan et al. (Kuaishou), KDD 2022</a></td><td>production</td><td>Watch time ranked within length buckets</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://arxiv.org/abs/2403.00454">Violot et al. 2024</a></td><td>16M videos</td><td>Shorts ~110× views, fewer comments per view</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://doi.org/10.1108/INTR-07-2023-0521">Xiao, Li, Mou, Internet Research 2026</a></td><td>2,511 TikTok</td><td>Inverted-U on shot count; faster speech → shares; bright audio → fewer likes</td><td><span class="s B">B</span></td></tr>
+<tr><td><a href="https://arxiv.org/abs/2512.21402">Gupta et al. 2025</a></td><td>~11k Shorts</td><td>Audio-energy change 12.4%, motion 10.7%, text≠speech 9.1%</td><td><span class="s B">B</span></td></tr>
+<tr><td><a href="https://arxiv.org/abs/2111.02452">Ling et al. 2021</a></td><td>400 coded TikToks</td><td>Close shots, on-screen text (67% vs 30%), talking to camera</td><td><span class="s C">C</span></td></tr>
+<tr><td><a href="https://doi.org/10.1080/02650487.2026.2670858">Dong et al., IJA 2026</a></td><td>6,606 Douyin</td><td>Subtitles cut comments; vocal music raised engagement</td><td><span class="s B">B</span></td></tr>
+<tr><td><a href="https://arxiv.org/abs/2606.16053">Paekivi &amp; Karjus 2026</a></td><td>~10k TikTok</td><td>CTA type had the biggest effect on comments</td><td><span class="s B">B</span></td></tr>
+<tr><td><a href="https://arxiv.org/abs/2507.19863">SMP-Video 2025</a></td><td>~6k TikTok</td><td>Creator features dominate; text adds most</td><td><span class="s B">B</span></td></tr>
+<tr><td><a href="https://doi.org/10.1016/j.tourman.2025.105286">Guo et al., Tourism Management 2026</a></td><td>1,636 travel videos</td><td>4 components drive engagement (full text embargoed)</td><td><span class="s B">B</span></td></tr>
+</table></div>
+
+<h2 id="platform"><span class="n">4</span>Platform + creator guidance (2025–26)</h2>
+<div class="cards">
+<div class="card"><b>Linked Reels &amp; Series</b><p>Link each reel to the previous one ("Watch Part"); Series hub in test since Jun 2026. <a href="https://techcrunch.com/2025/08/21/instagram-now-lets-creators-link-multiple-reels-in-a-series/">TechCrunch</a></p></div>
+<div class="card"><b>Trial Reels</b><p>Non-followers first; compare trials with trials. Use to A/B cold opens. <a href="https://www.socialmediatoday.com/news/instagram-allows-creators-to-schedule-trial-reels/816549/">SMT</a></p></div>
+<div class="card"><b>Raw beats polished</b><p>Mosseri: "the professional look becomes the tell". <a href="https://www.tubefilter.com/2026/01/06/adam-mosseri-instagram-warning-generative-ai-deepfakes/">Tubefilter</a></p></div>
+<div class="card"><b>No comment-bait</b><p>"Comment a word/emoji" asks aren't recommended; real questions are fine. <a href="https://www.socialmediatoday.com/news/instagram-clarifies-advice-single-word-ctas-longer-reels/718151/">SMT</a></p></div>
+<div class="card"><b>Tap-to-pause</b><p>One tap pauses (Mar 2026) — perfect for pause-and-guess. <a href="https://www.inro.social/blog/how-to-pause-instagram-reels-in-2026-tap-to-pause-is-finally-here">inro</a></p></div>
+<div class="card"><b>Search &amp; Google</b><p>Public pro-account posts indexed by Google/Bing since Jul 2025: keyword captions. <a href="https://www.inman.com/2025/07/11/with-instagrams-latest-update-posts-can-now-boost-your-seo/">Inman</a></p></div>
+<div class="card"><b>3:4 grid covers</b><p>Keep cover text in y≈285–1250 px of 1920. <a href="https://planoly.com/blog/guide-to-instagrams-new-vertical-grid">Planoly</a></p></div>
+<div class="card"><b>Travel hooks</b><p>Cost, mistake, insider, comparison; place named in 0–2 s; no slow establishing opener. <a href="https://blitzcutai.com/blog/travel-creator-reel-hooks-2026">Blitzcut</a> (vendor)</p></div>
+<div class="card"><b>Comedy timing</b><p>Setup fast, cut to the reaction, sting on recognition, ≤1 per joke. <a href="https://sonilo.com/blog/guides/funny-sound-effects-for-videos">Sonilo</a>, <a href="https://www.finchley.co.uk/finchley-learning/how-to-edit-a-comedy-video-for-instagram-reels">Finchley</a></p></div>
+<div class="card"><b>India</b><p>High sharing; nostalgia a top 2025 trend; civic-sense backlash risk abroad. <a href="https://www.storyboard18.com/social-media/what-kept-india-scrolling-in-2025-instagrams-year-in-review-reveals-the-trends-that-ruled-the-feed-85719.htm">Storyboard18</a></p></div>
+</div>
+
+<h2 id="tools"><span class="n">5</span>Open-source toolkit (licences checked)</h2>
+<div class="tw"><table>
+<tr><th>What</th><th>Item</th><th>Licence</th><th>Verdict</th></tr>
+<tr><td>Comedy SFX</td><td>Freesound CC0 packs: jalastram "Cartoon and Comedy", SieuAmThanh "Cartoon", schafferdavid; scratch/laugh/airhorn CC0 files</td><td>CC0, no credit (check each file)</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Whooshes, impacts</td><td>Sonniss GDC bundles</td><td>Royalty-free, no credit, no redistribution, no AI training</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Animated stickers</td><td>Microsoft Fluent Emoji Animated</td><td>MIT</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Animated stickers</td><td>Google Noto Animated Emoji</td><td>CC BY 4.0 (credit line)</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Lottie renderer</td><td>rlottie-python / thorvg-python</td><td>LGPL bindings, MIT cores</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Arrows, bursts</td><td>LottieFiles free animations</td><td>Lottie Simple License: commercial OK, no credit, no redistribution</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Captions</td><td>libass karaoke (HarfBuzz → Devanagari OK); pycaps to prototype</td><td>ISC / MIT</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Fonts</td><td>Montserrat Black, Anton, Bangers, Luckiest Guy, Baloo 2, Mukta, Poppins</td><td>OFL / Apache</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Find the funny bits</td><td>LAION CLAP ("people laughing"), PANNs (laughter/applause curve), LaughterSegmentation</td><td>CC0+Apache / MIT / MIT</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Rank moments, draft hooks</td><td>Qwen3-VL-8B via mlx-vlm (runs locally)</td><td>Apache-2.0 / MIT</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Dead-air pass</td><td>auto-editor</td><td>Unlicense</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Motion graphics</td><td>revideo / Motion Canvas / Manim</td><td>MIT</td><td><span class="s maybe">maybe</span></td></tr>
+<tr><td>Comedy SFX</td><td>Zapsplat free tier</td><td>Credit required on every post</td><td><span class="s maybe">maybe</span></td></tr>
+<tr><td>LUTs</td><td>Q-DDL (CC BY), FreeVisuals, PremiumBeat</td><td>Varies</td><td><span class="s maybe">maybe</span></td></tr>
+<tr><td>Meme sounds</td><td>Original vine boom, bruh, "oh no", Myinstants rips</td><td>Copyrighted</td><td><span class="s avoid">avoid</span></td></tr>
+<tr><td>SFX</td><td>BBC Sound Effects</td><td>Non-commercial</td><td><span class="s avoid">avoid</span></td></tr>
+<tr><td>Emoji</td><td>OpenMoji</td><td>CC BY-SA</td><td><span class="s avoid">avoid</span></td></tr>
+<tr><td>Music</td><td>Pixabay music</td><td>Content ID claims</td><td><span class="s avoid">avoid</span></td></tr>
+</table></div>
+<p class="note">Biggest win for us: an automatic "funny moment finder" — CLAP/PANNs laughter curve + LaughterSegmentation → Qwen3-VL ranks the windows → candidate cold opens, all local. It would have found "TOILET SEAT!" screaming without me guessing.</p>
+
+<h2 id="traps"><span class="n">6</span>Licence traps</h2>
+<div class="cards">
+<div class="card"><b>Meme originals</b><p>Not cleared, and sometimes mislabelled CC0 on Freesound. Synthesise a vine-boom-style hit instead.</p></div>
+<div class="card"><b>CC BY needs a credit</b><p>Noto Animated, Twemoji, Q-DDL LUTs: add a credits line to the post caption.</p></div>
+<div class="card"><b>No redistribution</b><p>Sonniss, Mixkit, Pixabay, LottieFiles: never publish the asset folder (our repo is private — keep it that way).</p></div>
+<div class="card"><b>Model weights ≠ code</b><p>Prefer Qwen3-VL (Apache-2.0); some smaller Qwen and LLaMA-based models are non-commercial.</p></div>
+</div>
+
+<h2 id="prague"><span class="n">7</span>Hook ideas for the Prague footage</h2>
+<div class="tmpl">
+<div><div class="os">"Mera naam: Divyansh. Starbucks ka version: ⬇️"</div><div class="cp">Pause-and-guess the spelling, then reveal the cup. "Tumhara naam Starbucks ne kaise likha?"</div></div>
+<div><div class="os">"Free walking tour — 'free' sirf naam ka tha"</div><div class="cp">"Things nobody tells you about free walking tours in Europe 💸 Tip kitni deni chahiye?"</div></div>
+<div><div class="os">"€6 ki ice cream vs apni ₹40 wali — honest review"</div><div class="cp">Cost/comparison hook. "Europe gelato worth it ya overrated? Comment mein fight karo 🍦"</div></div>
+<div><div class="os">"Prague Castle: free entry vs ticket — kya fark hai?"</div><div class="cp">"Prague Castle in Hindi — ticket lena worth hai? Save kar lo agar Europe plan kar rahe ho."</div></div>
+<div><div class="os">"The guard who doesn't blink"</div><div class="cp">Close-up reaction first, then the guard. "Kisi ne isko hasaya hai kabhi? 😂"</div></div>
+<div><div class="os">"Seedhiyan chadhne ke baad yeh view mila… worth it?"</div><div class="cp">Tower view, the payoff placed after a reaction. "Rate it 1–10."</div></div>
+</div>
+<p class="note">Full notes for the agent: <code>knowledge/viral-research-2026-10.md</code> in the video-editor repo.</p>
+</main></body></html>

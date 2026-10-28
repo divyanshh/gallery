@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Photo Virality Research</title>
+<style>
+:root{--bg:#f5f4ef;--panel:#fff;--panel2:#efeee8;--fg:#1b1b19;--mut:#6c6b64;--line:#e1dfd6;--acc:#FFD400;--ink:#1b1b19;--link:#2563c9;--good:#1f8a4c;--bad:#c23a2b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f0f0e;--panel:#191917;--panel2:#22221f;--fg:#ecebe4;--mut:#9a998f;--line:#2c2b27;--link:#8ab4ff;--good:#5fd08f;--bad:#ff7a6a}}
+:root[data-theme="dark"]{--bg:#0f0f0e;--panel:#191917;--panel2:#22221f;--fg:#ecebe4;--mut:#9a998f;--line:#2c2b27;--link:#8ab4ff;--good:#5fd08f;--bad:#ff7a6a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 80px}a{color:var(--link)}
+.top{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.top a{text-decoration:none;font-size:13px;border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:4px 12px;color:var(--fg)}
+.top a.on{background:var(--acc);color:var(--ink);border-color:var(--acc);font-weight:700}
+h1{font-size:28px;margin:0 0 6px}h2{font-size:20px;margin:36px 0 12px;display:flex;align-items:center;gap:10px}
+h2 .n{background:var(--acc);color:var(--ink);border-radius:99px;font-size:13px;padding:2px 10px;font-weight:800}
+.lead{color:var(--mut);max-width:780px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}nav a{text-decoration:none;color:var(--fg);border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:4px 12px;font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.card b{display:block;font-size:16px;margin-bottom:4px}.card p{margin:0;color:var(--mut);font-size:14px}.big{font-size:30px;font-weight:800}
+.tw{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--panel2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}tr:last-child td{border-bottom:0}
+.s{display:inline-block;font-size:11.5px;font-weight:700;border-radius:99px;padding:1px 8px}
+.A{background:#1f8a4c22;color:var(--good)}.B{background:#d9a40022;color:#b88a00}.C{background:#88888822;color:var(--mut)}
+.adopt{background:#1f8a4c22;color:var(--good)}.maybe{background:#d9a40022;color:#b88a00}.avoid{background:#c23a2b22;color:var(--bad)}
+.up{color:var(--good);font-weight:700}.down{color:var(--bad);font-weight:700}
+.tmpl{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.tmpl div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}.tmpl .os{font-weight:700}.tmpl .cp{color:var(--mut);font-size:13.5px;margin-top:6px}
+.note{background:var(--panel2);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--mut)}
+.spec{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}.spec div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.spec b{display:block}.spec span{color:var(--mut);font-size:13.5px}
+</style>
+</head>
+<body><main>
+<div class="top"><a href="../index.html">← Reels hub</a><a href="index.html">Video research</a><a class="on" href="photos.html">Photo research</a></div>
+<h1>What makes travel photos perform on Instagram</h1>
+<p class="lead">Research for the trip's photo posts (27 Oct 2026): 22 research papers, 2025–26 Instagram guidance, and open-source editing tools and assets with their licences checked. Turned into rules I follow when editing your photos.</p>
+<nav><a href="#take">Top takeaways</a><a href="#edit">How to edit</a><a href="#carousel">Carousels</a><a href="#papers">Papers</a><a href="#platform">Instagram 2025–26</a><a href="#caption">Captions &amp; posting</a><a href="#tools">Tools &amp; downloads</a><a href="#traps">Licence traps</a><a href="#templates">Prague post ideas</a><a href="#spec">Export spec</a></nav>
+
+<h2 id="take"><span class="n">1</span>Top takeaways</h2>
+<div class="cards">
+<div class="card"><span class="big">9×</span><b>Carousels, not single photos</b><p>Carousels get ~9× the saves and ~2× the reach of single images; single-image reach fell 22% in 2026 (Metricool, 24M posts).</p></div>
+<div class="card"><span class="big">1 + 2</span><b>Slide 1 and slide 2 are both covers</b><p>The cover dominates (+11% from layout alone in Airbnb data), and Instagram re-shows unswiped carousels starting at slide 2.</p></div>
+<div class="card"><span class="big">±</span><b>Filters depend on the subject</b><p>Filtered people <span class="up">+27–68%</span>, food <span class="up">+16%</span>; filtered landscapes <span class="down">−18–36%</span> (4.9M Flickr photos).</p></div>
+<div class="card"><span class="big">🔥</span><b>Warm, never cold</b><p>Warmth, exposure, contrast up = best; red ×1.6 repins; blue, green, black-and-white hurt.</p></div>
+<div class="card"><span class="big">🧍</span><b>People, the right way</b><p>Faces +38% likes; at landmarks a back-view or small-in-frame person raises appeal; strangers' faces lower it.</p></div>
+<div class="card"><span class="big">−31%</span><b>Text off the photos</b><p>Images with text got 31% fewer views. Text goes on the cover hook and dedicated tip/cost slides only.</p></div>
+<div class="card"><span class="big">✨</span><b>Raw beats polished</b><p>Mosseri: flawless looks read as AI. No sky swaps, no heavy beauty filters; AI labels cost ~7–8% likes.</p></div>
+<div class="card"><span class="big">📍</span><b>Location + keywords</b><p>Posts are indexed by Google and shown on Instagram Map: exact location tag, place keywords in line 1, alt text.</p></div>
+</div>
+
+<h2 id="edit"><span class="n">2</span>How I'll edit your photos (subject-aware)</h2>
+<div class="tw"><table>
+<tr><th>Subject</th><th>Edit</th><th>Why</th></tr>
+<tr><td><b>People, selfies, groups</b></td><td>Warm film look at 60–80%: a little warmth, exposure, contrast; skin protected</td><td>Filtered people +27–68%</td></tr>
+<tr><td><b>Food</b></td><td>Warm, a touch more saturation and clarity</td><td>Filtered food +16% views</td></tr>
+<tr><td><b>Landscapes, sky, river, rooftops</b></td><td>Light correction only: white balance, exposure, a little contrast</td><td>Filtered nature −18–36%</td></tr>
+<tr><td><b>Night</b></td><td>Near-untouched or the direct-flash look; never mushy lifted shadows</td><td>Night photos did better unfiltered</td></tr>
+<tr><td><b>Brown skin (every face)</b></td><td>White balance from a neutral stone first; skin keeps ~40% of the grade with a hue clamp — no grey-ashy or orange casts</td><td>Presets and vibrance are the usual culprits</td></tr>
+<tr><td><b>Finish</b></td><td>Fine grain 2–4%, light vignette; export sRGB 1080×1350, sharpened after resize</td><td>Heavy grain turns to mush after Instagram compression</td></tr>
+</table></div>
+
+<h2 id="carousel"><span class="n">3</span>Carousel craft</h2>
+<div class="cards">
+<div class="card"><b>Order</b><p>Best frame → second-best → story (arrive, landmark, detail, food, people, payoff) → tip/cost text slide → closing "Day N+1 next".</p></div>
+<div class="card"><b>Length</b><p>6–10 slides; photo dumps up to 20 (curated, not random). All slides take slide 1's ratio.</p></div>
+<div class="card"><b>Music</b><p>Add a track: carousels with music can show in the Reels tab (it mutes videos inside the carousel).</p></div>
+<div class="card"><b>After posting</b><p>You can reorder slides and change the cover in the first hours — swap a weak cover.</p></div>
+<div class="card"><b>Mix in video</b><p>A 3–6 s clip in the middle makes people stop and rewatch.</p></div>
+<div class="card"><b>Originality</b><p>Own photos only; reposts and watermarked screenshots lose recommendations (Apr 2026).</p></div>
+</div>
+
+<h2 id="papers"><span class="n">4</span>Research papers</h2>
+<div class="tw"><table>
+<tr><th>Paper</th><th>Data</th><th>Finding</th><th>Strength</th></tr>
+<tr><td><a href="https://ojs.aaai.org/index.php/ICWSM/article/view/14622">Bakhshi et al., ICWSM 2015</a></td><td>7.6M Flickr</td><td>Filtered +21% views, +45% comments; warmth/exposure/contrast best; cold hurts</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://cdn.aaai.org/ojs/3211/3211-28-6260-1-10-20190531.pdf">Bakhshi et al., ICWSM 2019</a></td><td>4.9M Flickr</td><td>People +27–68%, food +16%, nature −18–36% when filtered; text images −31% views</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4319885/">Bakhshi &amp; Gilbert, PLoS ONE 2015</a></td><td>~1M pins</td><td>Red ×1.6, purple, pink, saturation up; blue, green, B&amp;W down</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://people.csail.mit.edu/khosla/papers/www2014_khosla.pdf">Khosla et al., WWW 2014</a></td><td>2.3M Flickr</td><td>Content predicts 0.31–0.40, audience ~0.77; reddish beats blue/green</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://www.news.gatech.edu/news/2014/03/20/face-it-instagram-pictures-faces-are-more-popular">Bakhshi et al., CHI 2014</a></td><td>1.1M Instagram</td><td>Faces +38% likes, +32% comments; posting more → fewer likes/post</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://kellercenter.hankamer.baylor.edu/news/story/2021/using-images-increase-social-media-engagement">Li &amp; Xie, JMR 2020</a></td><td>Twitter + Instagram</td><td>High quality raises engagement; colourfulness helps travel posts</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://pubsonline.informs.org/doi/suppl/10.1287/mnsc.2022.4616">Li et al., Mgmt Science 2023</a></td><td>Airbnb</td><td>Cover photo effect far larger than any other; layout +11%</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://pubsonline.informs.org/doi/fpi/10.1287/mnsc.2021.4175">Zhang et al., Mgmt Science 2022</a></td><td>Airbnb</td><td>Professional photos +7% demand, half from quality</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://ideas.repec.org/a/eee/joinma/v49y2020icp20-53.html">Rietveld et al., JIM 2020</a></td><td>46.9k posts</td><td>Joy, awe, excitement drive likes; informative images don't</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://cbk.bschool.cuhk.edu.hk/how-the-backs-of-strangers-become-your-invisible-guides/">Wan &amp; Yuan, Tourism Mgmt 2024/25</a></td><td>3 experiments</td><td>Person in frame raises appeal; back view beats face</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://ideas.repec.org/a/oup/jconrs/v51y2024i2p321-341..html">Lu, Jung, Peck, JCR 2024</a></td><td>6 studies</td><td>Visible strangers make a place feel "theirs"</td><td><span class="s A">A</span></td></tr>
+<tr><td><a href="https://www.psypost.org/study-suggests-that-excessive-self-presentation-on-instagram-can-backfire/">Hong et al., CHB 2020</a></td><td>1,873 selfies</td><td>Heavy filters + stickers on selfies → fewer likes</td><td><span class="s B">B</span></td></tr>
+<tr><td><a href="https://zaguan.unizar.es/record/147031">Blanco-Moreno et al., 2024</a></td><td>27k destination posts</td><td>Place-centred and people images both engage</td><td><span class="s B">B</span></td></tr>
+<tr><td><a href="https://www.cbs.dk/en/articles/ai-labels-reduce-social-media-engagement">AI-label studies 2024–25</a></td><td>&gt;1M posts</td><td>AI-disclosed posts −7–8% likes</td><td><span class="s B">B</span></td></tr>
+</table></div>
+<p class="note">No academic study covers carousels, slide order, captions or posting time — those rules come from platform data and are worth checking against your own Insights.</p>
+
+<h2 id="platform"><span class="n">5</span>Instagram 2025–26</h2>
+<div class="cards">
+<div class="card"><b>Photos aren't dead</b><p>Mosseri: photos aren't penalised; video just earns more recommendations. Carousels win saves.</p></div>
+<div class="card"><b>3:4 grid</b><p>Since Jan 2025 the profile grid is 3:4. 1080×1440 matches the tile; 4:5 is the safe feed default.</p></div>
+<div class="card"><b>20 slides</b><p>Any photo/video mix; schedulers using the API stop at 10.</p></div>
+<div class="card"><b>Per-slide captions</b><p>Rolled out Jun 2026 — nice for tips, "not a reach hack".</p></div>
+<div class="card"><b>Instagram Map</b><p>Location-tagged public posts appear on the Map (India too).</p></div>
+<div class="card"><b>5 hashtags</b><p>Cap applies to photos and carousels too (Dec 2025).</p></div>
+<div class="card"><b>Devanagari text</b><p>In-app text styling supports Hindi script (Nov 2025).</p></div>
+<div class="card"><b>No photo trials yet</b><p>Trial posts exist for Reels only; Mosseri said photo trials "should" come.</p></div>
+</div>
+
+<h2 id="caption"><span class="n">6</span>Captions &amp; posting</h2>
+<div class="tw"><table>
+<tr><th>Do</th><th>Why</th></tr>
+<tr><td>Line 1 = hook with the place keyword ("Prague Castle at 7am…")</td><td>Instagram + Google search read captions</td></tr>
+<tr><td>Give a reason to send or save: a tip, a real cost (₹ and CZK), a joke</td><td>Sends and saves weigh most</td></tr>
+<tr><td>One genuine question; never "comment 🔥"</td><td>Keyword bait is demoted</td></tr>
+<tr><td>Exact location tag + custom alt text per slide</td><td>Map discovery, accessibility, search</td></tr>
+<tr><td>5 hashtags: city, country, niche, #europetrip, #indiansabroad</td><td>Platform cap</td></tr>
+<tr><td>Collab with the people in the photos</td><td>Shows on every collaborator's followers' feeds</td></tr>
+<tr><td>Space posts out; evenings IST, then trust Insights</td><td>More posts → fewer likes per post</td></tr>
+</table></div>
+
+<h2 id="tools"><span class="n">7</span>Tools &amp; downloads</h2>
+<div class="tw"><table>
+<tr><th>What</th><th>Item</th><th>Licence</th><th>Verdict</th></tr>
+<tr><td>Film looks</td><td>t3mujinpack (Portra, Ektar, Fuji styles) · spektrafilm (bake own LUTs) · our own procedural looks</td><td>MIT · CC BY-SA (commercial OK, credit) · ours</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Apply LUTs</td><td>pillow-lut, colour-science, ffmpeg lut3d</td><td>MIT / BSD</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Skin protection</td><td>MediaPipe selfie multiclass (face/body skin masks)</td><td>Apache SDK</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>White balance</td><td>OpenCV xphoto</td><td>Apache</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Remove tourists</td><td>LaMa (simple-lama-inpainting)</td><td>Apache</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Cut-outs</td><td>rembg with birefnet-general only</td><td>MIT</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Upscale crops</td><td>Real-ESRGAN ncnn (Mac)</td><td>MIT/BSD</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Best-shot picking</td><td>Sharpness + exposure checks, Qwen3-VL (already installed), LAION aesthetic predictor</td><td>Apache / MIT</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Stickers</td><td>Microsoft Fluent Emoji 3D</td><td>MIT</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Textures</td><td>ambientCG, Poly Haven (paper, tape)</td><td>CC0</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Fonts</td><td>Playfair Display, DM Serif, Caveat, Montserrat, Anton, Bebas Neue, Kalam, Tiro Devanagari Hindi, Rozha One</td><td>OFL</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Maps</td><td>staticmap + OpenStreetMap</td><td>Apache; OSM credit inside the image</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Grain, leaks, dust</td><td>Generated in code</td><td>ours</td><td><span class="s adopt">adopt</span></td></tr>
+<tr><td>Famous film LUT packs</td><td>RawTherapee / G'MIC collections</td><td>No licence (possibly VSCO-derived)</td><td><span class="s avoid">avoid</span></td></tr>
+<tr><td>Face restore</td><td>CodeFormer</td><td>Non-commercial</td><td><span class="s avoid">avoid</span></td></tr>
+<tr><td>Quality scorers</td><td>pyiqa, Q-Align</td><td>Non-commercial</td><td><span class="s avoid">avoid</span></td></tr>
+<tr><td>Depth (bokeh)</td><td>Depth Anything V2 Base/Large</td><td>Non-commercial (use Small)</td><td><span class="s avoid">avoid</span></td></tr>
+</table></div>
+
+<h2 id="traps"><span class="n">8</span>Licence traps</h2>
+<div class="cards">
+<div class="card"><b>rembg default model</b><p>Now bria-rmbg — paid for commercial use. Always pick birefnet-general.</p></div>
+<div class="card"><b>"Kodak / Fuji filter"</b><p>Trademarks. Call it "Portra-inspired" in public copy.</p></div>
+<div class="card"><b>OSM maps</b><p>The credit must be inside the image, not just in the caption.</p></div>
+<div class="card"><b>Free LUT sites</b><p>Often missing redistribution terms; check the licence inside the zip, never re-host.</p></div>
+</div>
+
+<h2 id="templates"><span class="n">9</span>Post ideas for Prague</h2>
+<div class="tmpl">
+<div><div class="os">Prague Castle: "7 AM vs 12 PM 😭"</div><div class="cp">Empty castle first, the crowds on slide 2. Caption: "Prague Castle tip nobody gave us: go before 8…"</div></div>
+<div><div class="os">Charles Bridge: expectation vs reality</div><div class="cp">Dreamy shot, then the selfie-stick chaos. "Send this to your bridge-photo-obsessed friend."</div></div>
+<div><div class="os">Astronomical Clock: "Overrated or iconic?"</div><div class="cp">Tight crop of the clock, the crowd, the 45-second show, the tower view.</div></div>
+<div><div class="os">"POV: you figured out Prague trams"</div><div class="cp">Tram window shot; last slide a text card with the 24h pass price.</div></div>
+<div><div class="os">St. Vitus — pure photos, minimal text</div><div class="cp">Stained glass, ceiling, light rays, you small in frame. Calm music track.</div></div>
+<div><div class="os">"Rate this view /10" — tower</div><div class="cp">Panorama cover, the climb, the reward. "Mumbai sunset still undefeated?"</div></div>
+<div><div class="os">"What ₹2,000 a day buys you in Prague"</div><div class="cp">Trdelník close-up, each dish with a CZK + ₹ price pill, veg picks last.</div></div>
+<div><div class="os">"Prague in 1 day: exact plan"</div><div class="cp">Map cover, one slide per stop in the order you did it — a save magnet.</div></div>
+</div>
+
+<h2 id="spec"><span class="n">10</span>Export spec</h2>
+<div class="spec">
+<div><b>Size</b><span>1080×1350 (4:5) default · 1080×1440 (3:4) if every slide is 3:4</span></div>
+<div><b>Grid crop</b><span>Centre 3:4 shows on your profile — keep faces and text central</span></div>
+<div><b>Colour</b><span>sRGB with profile; convert iPhone HEIC / Display-P3 first</span></div>
+<div><b>File</b><span>JPEG quality 90–92, 4:4:4, under 8 MB</span></div>
+<div><b>Sharpen</b><span>Lanczos resize, then a light sharpen</span></div>
+<div><b>Privacy</b><span>GPS stripped from exported files unless you want it</span></div>
+<div><b>App</b><span>Settings → Media quality → "Upload at highest quality"</span></div>
+<div><b>Stories</b><span>1080×1920, ~250 px clear top and bottom</span></div>
+</div>
+<p class="note">Agent notes with every source: <code>knowledge/photo-research-2026-10.md</code>; rules: <code>cortex/rules/photos.md</code> in the video-editor repo.</p>
+</main></body></html>
